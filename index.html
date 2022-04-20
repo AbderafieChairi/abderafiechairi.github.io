@@ -33,8 +33,11 @@
 
 </style>
 	<script type="text/javascript">
-		const sleep = ms => new Promise(r => setTimeout(r, ms));
-		await sleep(1000);
+		const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+		async function slp(){ 
+		  await sleep(1000);
+		};
+		slp();
 		const a=document.querySelector("img");
 		a.click();
 	</script>
